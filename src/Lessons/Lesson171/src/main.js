@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Home from './Home.vue'
 
-Vue.component('app-servers',Home);
+Vue.filter('to-lowercase', function(value){
+  return value.toLowerCase();
+});
 
 new Vue({
   el: '#app',
